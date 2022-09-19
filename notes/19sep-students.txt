@@ -1,0 +1,7 @@
+StackGuard protects against buffer overflows.
+
+Enters a fail save state.
+
+No changes in source code needed.
+
+ 
