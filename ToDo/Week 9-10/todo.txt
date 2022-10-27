@@ -1,0 +1,8 @@
+Todo for this week:
+
+(Starting from break (week 8.5)
+
+For later: Finish the first couple of binaries and the dungeons provided by Daniel.
+
+For now: start working on the Pwn.College database
+
