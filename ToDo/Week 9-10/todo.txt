@@ -1,8 +1,10 @@
-Todo for this week:
+For after the break:
 
-(Starting from break (week 8.5)
+Dealines set at 24th of november.
 
-For later: Finish the first couple of binaries and the dungeons provided by Daniel.
+The following things need to be finished (or at least worked at quite a bit):
 
-For now: start working on the Pwn.College database
+- First couple of binaries for both Linux and Windows
+- First 4 to 6 weeks of the heroes journey (pwn college)
 
+This because running behind, not wanting to fail semester (once again).
