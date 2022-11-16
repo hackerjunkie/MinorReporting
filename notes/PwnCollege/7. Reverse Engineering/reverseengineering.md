@@ -51,3 +51,28 @@ Again: *_This is not easy to do, and you need to actually understand how this wo
 
 #### Functions and frames:
 
+A **program** consist of:
+
+* **modules**..
+* that are made up of **functions**..
+* that contain **blocks**..
+* of **instructions**..
+* that operate on **variables** and **data structures**
+
+Functions:  
+Functions represent fairly well-encapsulated functionality:  
+Most functions have well-defined goals, such as:
+
+* Get some data
+* Calculate/retrieve/validate data
+* Dispatch other functions
+* Perform some action on the outside world (via system calls)
+
+Initially, functions can be reversed-engineered 	in isolation. Later you can get an understanding of how they fit together.
+
+Functions: the control graph:  
+Functions are represented as a **graph**  
+Each **block** is a set of instructions that will execute one after the other.  
+Blocks are joined by **edges**, representing conditional and unconditional jumps.  
+By understanding what the blocks do and what conditions trigger what edges, you can understand the funcntion's logic!
+
