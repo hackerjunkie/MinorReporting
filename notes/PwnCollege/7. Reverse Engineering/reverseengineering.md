@@ -74,5 +74,29 @@ Functions: the control graph:
 Functions are represented as a **graph**  
 Each **block** is a set of instructions that will execute one after the other.  
 Blocks are joined by **edges**, representing conditional and unconditional jumps.  
-By understanding what the blocks do and what conditions trigger what edges, you can understand the funcntion's logic!
+By understanding what the blocks do and what conditions trigger what edges, you can understand the funcntion's logic!  
+Functions often begin with a **prologue** and end with an **epilogue**.  
+The prologue set ups the stack frame, with the epilogue tears this down.
 
+What is the stack:  
+"The stack is a memory location". The stack is a region of memory used to store local variables and call context.  
+The stack grows backwards.  
+When you **push** the stack, **rsp** is reduced by 8.	
+When you **pop** the stack, **rsp** in _increased_ by 8.  
+The stack is conceptualized vertically or horizontally. (Grows up or down, or left to right, remember the lessons here: this depends from person to person.)
+
+
+#### Data access:
+Reminder: data can be in:  
+**.data** used for pre-initialized global writable data (such as global arrays with initial values)  
+**.rodata** used for global read-only data (such as string constants)  
+**.bss** used for uninitialized global writable data (such as global arrays without initial values)  
+**stack** used for statically-allocated local variables   
+**heap** used for dynamically-allocated (**malloc()**ed) variables.
+
+
+#### Static tools:
+
+#### Dynamic tools:
+
+#### Real world applications:
