@@ -96,7 +96,40 @@ Reminder: data can be in:
 
 
 #### Static tools:
+*Static* (as opposed to dynamic) reverse engineering tools: analyzing the program at rest.  
+What is in the elf file, not what the file does to get it's work done.  
+Some examples are: katai struct, nm, strings, objdump, checksec. (These are the simple tools).  
+More advanced tools are:  
+Advanced dissasamblers (these tools are all static, but some do support dynamic features).
+
+These cover some understanding about how the program was written, why that program was written and what the program's logic is.
+
+* Commercial:
+	* IDA (Interactive DissAssembler) pro: the gold standard of dissasamblers [link](https://hex-rays.com/ida-pro/) (insanely expensive)
+	* Binary Ninja: IDA's main competitor [link](https://binary.ninja) (also expensive, free version see below)
+
+* Free:
+	* Binary Ninja cloud: a version of Binary Ninja that runs in your browser. [link](https://cloud.binary.ninja) (no setup cost, nice and easy to use)
+
+* Open Source:
+	* Angr management: an academic binary analasis framework [link](https://github.com/angr/angr-management) 
+	* Ghidra: a reversing tool created by the NSA [link](https://ghidra-sre.org/) (use in class, it also is in the main Kali Linux and Parrot OS repos)
+	* Cutter: a reversing tool created by the radare2 open source project [link](https://cutter.re)
+
+**THERE IS NO SHORTAGE OF GOOD TOOLS THAT FITS YOU NEEDS!**
 
 #### Dynamic tools:
+Dynamic (as opposed to static) reverse engineering is the process of analyzing the program at runtime.  
+Simpel tools:  
+**Itrace** traces libary calls  
+**Strace** traces system calls  
+Running the program with multiple different inputs might get you further:
+
+* Itrace the program with input A
+* Itrace the program with input B
+* See if you can reverse the algorithm from looking at the input and output
+* Still does not scale to complex algorithms
+
+Left off here on 16th of november 2022.
 
 #### Real world applications:
