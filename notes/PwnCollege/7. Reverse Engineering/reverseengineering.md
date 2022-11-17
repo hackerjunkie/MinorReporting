@@ -130,6 +130,5 @@ Running the program with multiple different inputs might get you further:
 * See if you can reverse the algorithm from looking at the input and output
 * Still does not scale to complex algorithms
 
-Left off here on 16th of november 2022.
 
 #### Real world applications:
