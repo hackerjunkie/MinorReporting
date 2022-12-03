@@ -1,0 +1,25 @@
+Everything is based upon the meeting I had with Daniel on the 30 november 2022 via Teams.
+
+The two steps in this writeup are:
+1. Reverse-engineering the code
+2. Exploiting a vuln. with the know how from the code
+
+Each of these two parts have one page each.
+
+1. Reverse-engineering the code.
+
+Steps, draft:
+1. Took a look at the program: requires input from a field, then calls the ping command.
+2. Ran in trough objdump with the -x parameter, found main, vault and gate.
+3. Used dbg to dissas main, vault and gate. Found some intersting stuff
+	- system call
+	- intersting c calls
+4. Ran it trough gidhra to check said findings.
+
+2. Exploting a vuln.
+1. Went trough a list of known CWEs. Found a CWE that matched code in Gihra.
+2. Found out that the input field can pass 2 commands to the shell
+3. Iserted 127.0.0.1 ; cat flag.txt
+4. Got the flag back within the scope of the program.
+
+Done
