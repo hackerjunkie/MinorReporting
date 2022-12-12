@@ -1,0 +1,4 @@
+Needed windows binaries:
+
+- Get WinDbg to finally do what I need
+- Get the reports already made (still to be found)
